@@ -1,0 +1,56 @@
+package Model;
+
+import java.util.Calendar;
+import java.util.Date;
+public class ClinicalServices{
+/* Clinical Services attributes */
+private int id;
+private String service_name;
+private String service_desc;
+private int service_fees;
+private String service_duration;
+
+public void setServiceId()
+{
+this.id = (int) Math.random();
+}
+public void setServiceName(String service_name)
+{
+this.service_name = service_name;
+}
+
+public void setServiceDesc(String service_desc)
+{
+this.service_desc = service_desc;
+}
+
+public void setServiceFees(int service_fees)
+{
+this.service_fees = service_fees;
+}
+public void setServiceDuration(String service_duration)
+{
+this.service_duration = service_duration;
+}
+
+public int getServiceId()
+{
+return this.id;
+}
+public String getServiceName()
+{
+return this.service_name;
+}
+public String getServiceDesc()
+{
+return this.service_desc;
+}
+public int getServiceFees()
+{
+return this.service_fees;
+}
+public String getServiceDuration()
+{
+return this.service_duration;
+}
+}
