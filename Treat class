@@ -1,0 +1,18 @@
+package Model;
+import java.util.Calendar;
+import java.util.Date;
+public class Treat{
+private Calendar appointment_date;
+Pet ObjPet;
+ClinicalServices ObjService;
+public void treat_pet_service(Pet tempPet, ClinicalServices tempService, Calendar temp_appointment_date)
+{
+ObjPet = tempPet;
+ObjService = tempService;
+appointment_date = temp_appointment_date;
+}
+public void display_pet_treatment()
+{
+System.out.println(this.ObjPet.getOwnerName()+"'s pet "+this.ObjPet.getPetName()+" has been treated for "+this.ObjService.getServiceName()+" on "+appointment_date.getTime());
+}
+}
