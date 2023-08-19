@@ -5,30 +5,6 @@ import java.util.Date;
 import java.util.ArrayList;
 import java.util.Date;
 
-/**
-* Identification comments:
-* Name: SIDDHI AWARI
-* Experiment No:
-* Experiment Title:
-* Experiment Date:
-* @version 1.0
-*
-*
-* Beginning comments:
-* Filename: Pet.java
-* @author: SIDDHI AWARI
-* /* Overview: This class is created to store the attributes of Student. It is a subclass of the class "Person" which inherits
-some of the attributes from the Person class. And the class representing the "Person" object implements the interface named
-"Table Member".
-*
-* Attribute comments:
-* id : Its Student Id
-* Name :
-* DOB :
-*
-*
-*/
-
 public class Pet{
 
 /* Pet attributes */
