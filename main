@@ -1,0 +1,86 @@
+import Model.ClinicalServices;
+import Model.Treat;
+import Model.Pet;
+
+
+
+
+import java.util.Calendar;
+
+
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+public class Main {
+public static void main(String[] args) {
+// First entry
+Pet p1 = new Pet();
+p1.setPetName("Simba");
+p1.setOwnerName("Sushil");
+p1.setMobileNo(987654789);
+p1.setEmail("sushilm@gmail.com");
+
+
+ClinicalServices c1 = new ClinicalServices();
+c1.setServiceName("Allergy");
+c1.setServiceDesc("Pet allergy is an allergic reaction to proteins found in animal's skin cells,saliva or urine.");
+c1.setServiceFees(450);
+
+
+Treat t1 = new Treat();
+Calendar cal1 = Calendar.getInstance();
+cal1.set(Calendar.MONTH, 17);
+cal1.set(Calendar.DATE, 2);
+cal1.set(Calendar.YEAR, 2023);
+t1.treat_pet_service(p1,c1,cal1);
+
+
+// Second entry
+Pet p2 = new Pet();
+p2.setPetName("Maggie");
+p2.setOwnerName("Prayag");
+p2.setMobileNo(99831534);
+p2.setEmail("prayagay@gmail.com");
+
+
+ClinicalServices c2 =new ClinicalServices();
+c2.setServiceName("Vaccination");
+c2.setServiceDesc("Vaccinations prevent disease that can be passed from animals to animals and also from animals to people.");
+c2.setServiceFees(150);
+
+
+Treat t2 = new Treat();
+Calendar cal2 = Calendar.getInstance();
+cal1.set(Calendar.MONTH, 6);
+cal1.set(Calendar.DATE, 9);
+cal1.set(Calendar.YEAR, 2023);
+t2.treat_pet_service(p2,c2,cal2);
+
+
+// Third entry
+Pet p3 = new Pet();
+p3.setPetName("Jimmy");
+p3.setOwnerName("Kavya");
+p3.setMobileNo(877996542);
+p3.setEmail("kavya212@gmail.com");
+
+
+ClinicalServices c3 = new ClinicalServices();
+c3.setServiceName("Skin Infection");
+c3.setServiceDesc("The signs of skin infection in pets include dry,crusty skin,redness.");
+c3.setServiceFees(900);
+
+
+Treat t3 = new Treat();
+Calendar cal3 = Calendar.getInstance();
+cal3.set(Calendar.MONTH, 12);
+cal3.set(Calendar.DATE, 9);
+cal3.set(Calendar.YEAR, 2023);
+t3.treat_pet_service(p3,c3,cal3);
+
+
+// Printing entries
+t1.display_pet_treatment();
+t2.display_pet_treatment();
+t3.display_pet_treatment();
+}
+}
