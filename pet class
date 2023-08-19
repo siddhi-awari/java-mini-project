@@ -1,0 +1,110 @@
+package Model;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.ArrayList;
+import java.util.Date;
+
+/**
+* Identification comments:
+* Name: SIDDHI AWARI
+* Experiment No:
+* Experiment Title:
+* Experiment Date:
+* @version 1.0
+*
+*
+* Beginning comments:
+* Filename: Pet.java
+* @author: SIDDHI AWARI
+* /* Overview: This class is created to store the attributes of Student. It is a subclass of the class "Person" which inherits
+some of the attributes from the Person class. And the class representing the "Person" object implements the interface named
+"Table Member".
+*
+* Attribute comments:
+* id : Its Student Id
+* Name :
+* DOB :
+*
+*
+*/
+
+public class Pet{
+
+/* Pet attributes */
+
+private String PetType;
+private String PetName;
+private String OwnerName;
+private String PetAge;
+private long mobile_no;
+private String email;
+private String PetGender;
+private String PetBreed;
+
+public void setPetType(String PetType)
+{
+this.PetType = PetType;
+}
+public void setPetName(String PetName)
+{
+this.PetName = PetName;
+}
+public void setOwnerName(String OwnerName)
+{
+this.OwnerName = OwnerName;
+}
+public void setMobileNo(long mobile_no)
+{
+this.mobile_no = mobile_no;
+}
+public void setEmail(String email)
+{
+this.email = email;
+}
+public void setPetGender(String PetGender)
+{
+this.PetGender= PetGender;
+}
+public void setPetBreed(String PetBreed)
+{
+this.PetBreed = PetBreed;
+}
+public void setPetAge(String PetAge)
+{
+this.PetAge = PetAge;
+}
+
+public String getPetType()
+{
+return this.PetType;
+}
+public String getPetName()
+{
+return this.PetName;
+}
+public String getOwnerName()
+{
+return this.OwnerName;
+}
+public long getMobileNo()
+{
+return this.mobile_no;
+}
+public String getEmail()
+{
+return this.email;
+}
+public String getPetGender()
+{
+return this.PetGender;
+}
+public String getPetBreed()
+{
+return this.PetBreed;
+}
+public String getPetAge()
+{
+return this.PetAge;
+}
+}
